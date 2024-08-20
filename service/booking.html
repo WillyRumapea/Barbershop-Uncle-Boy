@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="logo">
+      <h1>Uncle Boy Barbershop</h1>
+    </div>
+    <form
+      action="https://formspree.io/f/mzzpvzgy"
+      method="post"
+      id="booking-form"
+    >
+      <input type="text" name="nama" placeholder="Nama" required />
+      <input
+        type="number"
+        name="umur"
+        placeholder="Umur"
+        id="umur-customer"
+        required
+      />
+      <input
+        type="datetime-local"
+        name="tanggal"
+        placeholder="Tanggal"
+        required
+      />
+      <input
+        type="text"
+        name="tipeCukur"
+        list="hairStyle"
+        placeholder="Haircut"
+        id="tipe-cukur"
+        required
+      />
+      <datalist id="hairStyle">
+        <option value="Undercut"></option>
+        <option value="Comma Hair"></option>
+        <option value="Two Block"></option>
+        <option value="French Crop"></option>
+        <option value="Mullet"></option>
+      </datalist>
+      <input
+        type="number"
+        name="harga"
+        placeholder="Harga"
+        id="harga-cukur"
+        readonly
+        required
+      />
+
+      <div class="button">
+        <button type="submit">booking</button>
+      </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
