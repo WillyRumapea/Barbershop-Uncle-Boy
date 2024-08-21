@@ -611,6 +611,10 @@ footer .container-social-med ul a li {
     align-items: center;
     gap: 1rem;
   }
+
+  footer .container-social-med ul a li {
+    display: none;
+  }
 }
 
 /* phone view */
