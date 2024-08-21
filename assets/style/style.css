@@ -497,7 +497,7 @@ footer .container-social-med ul a li {
     padding: 50px;
     width: 95vw;
     gap: 10rem;
-    border: 1px solid #ff0000;
+    /* border: 1px solid #ff0000; */
   }
 
   main .container-main section.main-section {
@@ -563,13 +563,13 @@ footer .container-social-med ul a li {
 
   .container-main section.contact-section {
     width: 120%;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
   }
 
   .container-main section.contact-section .container-contact {
     display: flex;
     flex-direction: column;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
   }
 
   .container-main
@@ -580,7 +580,7 @@ footer .container-social-med ul a li {
     padding: 10px;
     gap: 10px;
     text-align: center;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
   }
 
   .container-main
