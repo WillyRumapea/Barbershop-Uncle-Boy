@@ -450,6 +450,10 @@ footer .container-social-med ul a li {
 
 /* phone view */
 @media screen and (max-width: 500px) {
+  html {
+    overflow-x: hidden;
+  }
+
   /* body {
     border: 1px solid #00ff00;
   } */
@@ -612,8 +616,16 @@ footer .container-social-med ul a li {
     gap: 1rem;
   }
 
-  footer .container-social-med ul a li {
+  footer .container-social-med {
     display: none;
+  }
+
+  footer .container-social-med-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
   }
 }
 
