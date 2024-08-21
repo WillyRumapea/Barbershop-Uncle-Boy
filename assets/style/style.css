@@ -524,6 +524,15 @@ footer .container-social-med ul a li {
     height: 50%;
   }
 
+  main
+    .container-main
+    section.main-section
+    .side-left-main
+    .button-main-container {
+    width: 86vw;
+    border: 2px solid #0000ff;
+  }
+
   main .container-main section.main-section .side-right-main {
     display: none;
   }
