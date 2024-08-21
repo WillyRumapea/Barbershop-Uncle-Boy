@@ -496,7 +496,7 @@ footer .container-social-med ul a li {
     flex-direction: column;
     padding: 50px;
     width: 95vw;
-    gap: 3rem;
+    gap: 8rem;
     border: 1px solid #ff0000;
   }
 
