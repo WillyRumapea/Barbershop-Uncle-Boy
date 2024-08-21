@@ -489,40 +489,80 @@ footer .container-social-med ul a li {
 
   main {
     width: 100vw;
-    /* border: 1px solid #fff; */
+    border: 1px solid #fff;
   }
 
   main .container-main {
     flex-direction: column;
     padding: 50px;
     width: 95vw;
-    /* border: 1px solid #ff0000; */
+    border: 1px solid #ff0000;
   }
 
   main .container-main section.main-section {
+    display: flex;
     flex-direction: column;
     margin-top: 1rem;
+    height: 100%;
     width: 90vw;
-    /* border: 1px solid #00ff00; */
+    border: 1px solid #fff;
   }
 
   main .container-main section.main-section .side-left-main {
     border: 1px solid #fff;
+    height: 50%;
   }
 
   main .container-main section.main-section .side-right-main {
+    height: 400px;
+    width: 430px;
     border: 1px solid #fff;
   }
 
   .container-main section.main-section .side-right-main .barber-info-main {
-    left: 20%;
-    top: 80vh;
+    left: 33%;
+    top: 78vh;
+    text-align: center;
+    width: 40vw;
+    height: 17vh;
   }
 
-  .container-main section.main-section .side-right-main .barber-info-main {
-    text-align: center;
-    width: 64vw;
-    height: 10vh;
+  .container-main
+    section.main-section
+    .side-right-main
+    .barber-info-main
+    .info {
+    border: 1px solid #fff;
+  }
+
+  .container-main
+    section.main-section
+    .side-right-main
+    .barber-info-main
+    .info
+    h4 {
+    font-size: 12;
+  }
+
+  .container-main
+    section.main-section
+    .side-right-main
+    .barber-info-main
+    .info
+    p {
+    font-size: 10px;
+    font-weight: 40;
+  }
+
+  .container-main
+    section.main-section
+    .side-right-main
+    .barber-info-main
+    .service-vip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
   }
 }
 
