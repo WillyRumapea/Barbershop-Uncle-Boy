@@ -450,11 +450,15 @@ footer .container-social-med ul a li {
 
 /* phone view */
 @media screen and (max-width: 500px) {
+  /* body {
+    border: 1px solid #00ff00;
+  } */
+
   header nav {
     display: flex;
     position: fixed;
     gap: 10rem;
-    transform: translate(10%, 10%);
+    transform: translate(0, 10%);
     border: 1px solid #fff;
   }
 
@@ -478,5 +482,23 @@ footer .container-social-med ul a li {
     text-align: center;
     border: 1px solid #fff;
   }
+
+  header nav span {
+    color: #fff;
+  }
+
+  main .container-main {
+    flex-direction: column;
+    padding: 30px;
+    width: 100vw;
+    border: 1px solid #ff0000;
+  }
+
+  main .container-main section.main-section {
+    flex-direction: column;
+    width: 100vw;
+    border: 1px solid #fff;
+  }
 }
+
 /* phone view */

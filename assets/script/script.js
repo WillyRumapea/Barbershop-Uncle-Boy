@@ -14,7 +14,7 @@ contactButton.addEventListener("click", () => {
 
 hamMenu.addEventListener("click", () => {
   if (!slideNavbar) {
-    navBar.style.transform = "translate(167px,75%)";
+    navBar.style.transform = "translate(173px,75%)";
     slideNavbar = true;
   } else {
     navBar.style.transform = "translate(220%,75%)";
