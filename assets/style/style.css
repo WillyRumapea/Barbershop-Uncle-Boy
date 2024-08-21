@@ -514,55 +514,7 @@ footer .container-social-med ul a li {
   }
 
   main .container-main section.main-section .side-right-main {
-    height: 400px;
-    width: 430px;
-    border: 1px solid #fff;
-  }
-
-  .container-main section.main-section .side-right-main .barber-info-main {
-    left: 33%;
-    top: 78vh;
-    text-align: center;
-    width: 40vw;
-    height: 17vh;
-  }
-
-  .container-main
-    section.main-section
-    .side-right-main
-    .barber-info-main
-    .info {
-    border: 1px solid #fff;
-  }
-
-  .container-main
-    section.main-section
-    .side-right-main
-    .barber-info-main
-    .info
-    h4 {
-    font-size: 12;
-  }
-
-  .container-main
-    section.main-section
-    .side-right-main
-    .barber-info-main
-    .info
-    p {
-    font-size: 10px;
-    font-weight: 40;
-  }
-
-  .container-main
-    section.main-section
-    .side-right-main
-    .barber-info-main
-    .service-vip {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #fff;
+    display: none;
   }
 }
 
