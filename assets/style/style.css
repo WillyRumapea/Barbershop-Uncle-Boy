@@ -562,6 +562,7 @@ footer .container-social-med ul a li {
   }
 
   .container-main section.contact-section {
+    width: 120%;
     border: 1px solid #fff;
   }
 
@@ -596,8 +597,8 @@ footer .container-social-med ul a li {
   }
 
   .container-contact .service-info-map iframe {
-    width: 40vh;
-    height: 50vh;
+    width: 25vh;
+    height: 30vh;
     border: none;
     outline: none;
   }
