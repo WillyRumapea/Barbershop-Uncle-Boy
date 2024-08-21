@@ -459,6 +459,7 @@ footer .container-social-med ul a li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
     border: 1px solid #fff;
   }
 
