@@ -453,7 +453,29 @@ footer .container-social-med ul a li {
   header nav {
     display: flex;
     position: fixed;
+    gap: 10rem;
     transform: translate(10%, 10%);
+    border: 1px solid #fff;
+  }
+
+  header nav ul#navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    padding: 10px;
+    height: 15vh;
+    transform: translate(220%, 75%);
+    border: 1px solid #fff;
+    transition: all ease-in-out 0.2s;
+  }
+
+  header nav ul#navbar-nav li {
+    font-size: 18px;
+    width: 100px;
+    text-align: center;
     border: 1px solid #fff;
   }
 }
