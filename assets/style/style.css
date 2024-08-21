@@ -449,54 +449,12 @@ footer .container-social-med ul a li {
 }
 
 /* phone view */
-@media screen and (max-width: 480px) {
-  body {
-    display: flex;
-    flex-direction: column;
-  }
-
-  header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 38px;
-    width: 100vw;
-    padding: 10px;
-    border: 1px solid #ff0000;
-  }
-
+@media screen and (max-width: 500px) {
   header nav {
-    width: 100vw;
-    justify-content: space-around;
-    gap: 10rem;
-    padding: 0;
-    position: fixed;
-    top: 34px;
-    left: 20px;
-    border: 1px solid #fff;
-  }
-
-  header nav .logo h1 {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  header nav ul#navbar-nav {
     display: flex;
-    flex-direction: column;
-    width: 80px;
-    height: 20vh;
-    position: absolute;
-    right: -50vw;
-    top: 9px;
-    background-color: var(--secondaryColor);
+    position: fixed;
+    transform: translate(10%, 10%);
     border: 1px solid #fff;
-  }
-
-  header nav span {
-    color: #fff;
-    display: block;
-    cursor: pointer;
   }
 }
 /* phone view */
