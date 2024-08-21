@@ -454,15 +454,19 @@ footer .container-social-med ul a li {
     overflow-x: hidden;
   }
 
-  /* body {
-    border: 1px solid #00ff00;
-  } */
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+  }
 
   header nav {
     display: flex;
     position: fixed;
     gap: 10rem;
-    transform: translate(0, 10%);
+    transform: translate(-50vw, 10%);
     /* border: 1px solid #fff; */
   }
 
