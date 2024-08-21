@@ -597,10 +597,18 @@ footer .container-social-med ul a li {
   }
 
   .container-contact .service-info-map iframe {
-    width: 40vh;
+    width: 35vh;
     height: 30vh;
     border: none;
     outline: none;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
   }
 }
 
