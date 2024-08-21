@@ -459,7 +459,7 @@ footer .container-social-med ul a li {
     position: fixed;
     gap: 10rem;
     transform: translate(0, 10%);
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
   }
 
   header nav ul#navbar-nav {
@@ -487,17 +487,23 @@ footer .container-social-med ul a li {
     color: #fff;
   }
 
+  main {
+    width: 100vw;
+    border: 1px solid #fff;
+  }
+
   main .container-main {
     flex-direction: column;
-    padding: 30px;
-    width: 100vw;
+    padding: 50px;
+    width: 90vw;
     border: 1px solid #ff0000;
   }
 
   main .container-main section.main-section {
     flex-direction: column;
-    width: 100vw;
-    border: 1px solid #fff;
+    margin-top: 1rem;
+    width: 90vw;
+    border: 1px solid #00ff00;
   }
 }
 
