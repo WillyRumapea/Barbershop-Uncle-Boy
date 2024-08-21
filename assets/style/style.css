@@ -530,6 +530,10 @@ footer .container-social-med ul a li {
     .side-left-main
     .button-main-container {
     width: 86vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
     /* border: 2px solid #0000ff; */
   }
 
