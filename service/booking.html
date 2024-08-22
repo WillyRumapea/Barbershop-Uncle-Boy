@@ -17,6 +17,18 @@
     >
       <input type="text" name="nama" placeholder="Nama" required />
       <input
+        type="text"
+        name="tipeService"
+        list="listService"
+        placeholder="Servis"
+        id="servis"
+        required
+      />
+      <datalist id="listService">
+        <option value="Pangkas"></option>
+        <option value="Warnai Rambut"></option>
+      </datalist>
+      <input
         type="number"
         name="umur"
         placeholder="Umur"
@@ -35,7 +47,6 @@
         list="hairStyle"
         placeholder="Haircut"
         id="tipe-cukur"
-        required
       />
       <datalist id="hairStyle">
         <option value="Undercut"></option>

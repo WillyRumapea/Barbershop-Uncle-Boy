@@ -1,5 +1,5 @@
 :root {
-  --primaryColor: #151515;
+  --primaryColor: rgb(21, 21, 21);
   --secondaryColor: #d3a254;
   --sekunderColor: #bfa580;
   --brownOne: #c4967b;
@@ -31,8 +31,8 @@ header nav {
   align-items: center;
   justify-content: space-evenly;
   padding: 1rem;
-  width: 98.9vw;
   position: fixed;
+  width: 98.9vw;
   transform: translate(-10px, -2vh);
   background: rgba(80, 74, 74, 0.11);
   border-radius: 16px;
@@ -47,6 +47,7 @@ header nav .logo h1 {
   font-size: 30px;
   color: var(--secondaryColor);
 }
+
 header nav span.ham-menu {
   display: none;
 }
@@ -254,6 +255,16 @@ main {
   justify-content: flex-start;
   align-items: center;
   /* border: 1px solid; */
+}
+
+.container-main
+  section.main-section
+  .side-right-main
+  .barber-info-main
+  .service-vip
+  p
+  a {
+  color: var(--secondaryColor);
 }
 
 .container-main section.service-section .container-service {
