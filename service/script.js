@@ -5,15 +5,21 @@ const listStatus = {
   dewasa: 25000,
 };
 
-const listServis = {
-  Pangkas: 0,
-  "Warnai Rambut": 20000,
+const bawaCat = {
+  iya: 10000,
+  tidak: 20000,
 };
 
 const umurCustomer = document.getElementById("umur-customer");
-const bookingForm = document.getElementById("booking-form");
-const services = document.getElementById("servis");
+const responseList = document.getElementById("response-list");
+const bookingForm = document.getElementById("booking-form-haircut");
 const harga = document.getElementById("harga-cukur");
+const hargaWarna = document.getElementById("harga-warnain");
+const coloringForm = document.getElementById("booking-form-coloring");
+const toColoringForm = document.getElementsByClassName(
+  "to-coloring-booking"
+)[0];
+const toHaircutForm = document.getElementsByClassName("to-haircut-booking")[0];
 let statusCustomer = 0;
 
 function updateStatusCustomer() {
@@ -28,27 +34,37 @@ function updateStatusCustomer() {
   }
 }
 
-// services.addEventListener("input", (service) => {
-//   const serviceSelected = service.target.value;
-
-//   if (serviceSelected === "Warnai Rambut") {
-//     harga.value = listServis["Warnai Rambut"];
-//   } else {
-//     updateStatusCustomer();
-//     harga.value = updateStatusCustomer();
-//   }
-// });
-
 bookingForm.addEventListener("input", () => {
-  if (umurCustomer.value === "" && services.value === "") {
+  const harga = document.getElementById("harga-cukur");
+
+  if (umurCustomer.value === "") {
     harga.value = "";
     return;
   }
 
-  if (services.value === "Warnai Rambut") {
-    harga.value = listServis["Warnai Rambut"];
+  updateStatusCustomer();
+  harga.value = statusCustomer;
+});
+
+toColoringForm.addEventListener("click", (event) => {
+  event.preventDefault();
+  coloringForm.style.display = "flex";
+  bookingForm.style.display = "none";
+});
+
+coloringForm.addEventListener("input", () => {
+  if (responseList.value === "") {
+    hargaWarna.value = "";
+    return;
+  } else if (responseList.value === "iya") {
+    hargaWarna.value = bawaCat.iya;
   } else {
-    updateStatusCustomer();
-    harga.value = statusCustomer;
+    hargaWarna.value = bawaCat.tidak;
   }
+});
+
+toHaircutForm.addEventListener("click", (event) => {
+  event.preventDefault();
+  coloringForm.style.display = "none";
+  bookingForm.style.display = "flex";
 });

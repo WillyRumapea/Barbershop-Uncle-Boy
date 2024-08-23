@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+
+    <!-- icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- icon -->
   </head>
   <body>
     <div class="logo">
@@ -13,61 +17,99 @@
     <form
       action="https://formspree.io/f/mzzpvzgy"
       method="post"
-      id="booking-form"
+      id="booking-form-haircut"
     >
-      <input type="text" name="nama" placeholder="Nama" required />
-      <input
-        type="text"
-        name="tipeService"
-        list="listService"
-        placeholder="Servis"
-        id="servis"
-        required
-      />
-      <datalist id="listService">
-        <option value="Pangkas"></option>
-        <option value="Warnai Rambut"></option>
-      </datalist>
-      <input
-        type="number"
-        name="umur"
-        placeholder="Umur"
-        id="umur-customer"
-        required
-      />
-      <input
-        type="datetime-local"
-        name="tanggal"
-        placeholder="Tanggal"
-        required
-      />
-      <input
-        type="text"
-        name="tipeCukur"
-        list="hairStyle"
-        placeholder="Haircut"
-        id="tipe-cukur"
-      />
-      <datalist id="hairStyle">
-        <option value="Undercut"></option>
-        <option value="Comma Hair"></option>
-        <option value="Two Block"></option>
-        <option value="French Crop"></option>
-        <option value="Mullet"></option>
-      </datalist>
-      <input
-        type="number"
-        name="harga"
-        placeholder="Harga"
-        id="harga-cukur"
-        readonly
-        required
-      />
-
+      <h3>HairCut</h3>
+      <div class="input-service-haircut">
+        <input type="text" name="nama" placeholder="Nama" required />
+        <datalist id="listService">
+          <option value="Pangkas"></option>
+          <option value="Warnai Rambut"></option>
+        </datalist>
+        <input
+          type="number"
+          name="umur"
+          placeholder="Umur"
+          id="umur-customer"
+          required
+        />
+        <input
+          type="datetime-local"
+          name="tanggal"
+          placeholder="Tanggal"
+          required
+        />
+        <input
+          type="text"
+          name="tipeCukur"
+          list="hairStyle"
+          placeholder="Haircut"
+          id="tipe-cukur"
+          required
+        />
+        <datalist id="hairStyle">
+          <option value="Undercut"></option>
+          <option value="Comma Hair"></option>
+          <option value="Two Block"></option>
+          <option value="French Crop"></option>
+          <option value="Mullet"></option>
+        </datalist>
+        <input
+          type="number"
+          name="harga"
+          placeholder="Harga"
+          id="harga-cukur"
+          readonly
+          required
+        />
+      </div>
       <div class="button">
         <button type="submit">booking</button>
       </div>
+      <p>
+        mau warnain rambut ?<a href="" class="to-coloring-booking"
+          ><i data-feather="arrow-right"></i
+        ></a>
+      </p>
     </form>
+    <form
+      action="https://formspree.io/f/mzzpvzgy"
+      id="booking-form-coloring"
+      style="display: none"
+      method="post"
+    >
+      <h3>Hair Coloring</h3>
+      <div class="input-service-coloring">
+        <input type="text" name="nama" placeholder="Nama" required />
+        <input type="text" name="umur" placeholder="Umur" required />
+        <input
+          type="text"
+          name="cat"
+          placeholder="Bawa cat sendiri ?"
+          list="list-response"
+          id="response-list"
+          required
+        />
+        <datalist id="list-response">
+          <option value="iya"></option>
+          <option value="tidak"></option>
+        </datalist>
+        <textarea name="pesan" placeholder="ada catatan ?" id=""></textarea>
+        <input type="number" id="harga-warnain" placeholder="harga" readonly />
+        <div class="button">
+          <button type="submit">booking</button>
+        </div>
+      </div>
+      <p>
+        mau cukur rambut ?<a href="" class="to-haircut-booking"
+          ><i data-feather="arrow-right"></i
+        ></a>
+      </p>
+    </form>
+
+    <script>
+      feather.replace();
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
