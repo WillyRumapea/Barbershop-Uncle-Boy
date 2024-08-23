@@ -198,6 +198,10 @@ main {
   color: var(--sekunderColor);
 }
 
+main .container-main section.main-section .side-left-main .service-vip {
+  display: none;
+}
+
 .container-main section.main-section .side-right-main {
   display: flex;
   flex-direction: column;
@@ -564,6 +568,20 @@ footer .container-social-med-mobile {
     align-items: center;
     gap: 2rem;
     /* border: 2px solid #0000ff; */
+  }
+
+  main .container-main section.main-section .side-left-main .service-vip {
+    display: block;
+    /* border: 1px solid #fff; */
+  }
+
+  .container-main section.main-section .side-left-main .service-vip p a {
+    text-decoration: none;
+    color: var(--secondaryColor);
+  }
+
+  main .container-main section.main-section .side-left-main .service-vip p a {
+    text-decoration: none;
   }
 
   main .container-main section.main-section .side-right-main {

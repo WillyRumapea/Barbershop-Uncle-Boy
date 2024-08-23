@@ -129,17 +129,27 @@ p a {
 @media screen and (max-width: 500px) {
   form {
     flex-direction: column;
-    width: 70vw;
-    max-height: 70vh;
+    width: 60vw;
+    max-height: 40vh;
     justify-content: space-evenly;
     gap: 1rem;
     flex-wrap: nowrap;
+    /* border: 1px solid #fff; */
   }
 
-  form input {
+  form .input-service-haircut,
+  form .input-service-coloring {
+    width: 60vw;
+    /* border: 1px solid #fff; */
+  }
+
+  form .input-service-haircut input,
+  form .input-service-coloring input,
+  form .input-service-coloring textarea {
     height: 25px;
     width: 80%;
     transition: all ease-in-out 0.2s;
+    /* border: 1px solid #fff; */
   }
 
   form input:focus {
