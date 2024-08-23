@@ -130,7 +130,7 @@ p a {
   form {
     flex-direction: column;
     width: 60vw;
-    max-height: 40vh;
+    max-height: 60vh;
     justify-content: space-evenly;
     gap: 1rem;
     flex-wrap: nowrap;
